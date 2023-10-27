@@ -26,6 +26,9 @@ jobs:
       run: ./gradlew build
     - name: list files
       run: ls 
+    - name: Setup Debug Session
+      uses: csexton/debugger-action@master
+
     - name: upload artifact
       uses: actions/upload-artifact@v3
       with:
