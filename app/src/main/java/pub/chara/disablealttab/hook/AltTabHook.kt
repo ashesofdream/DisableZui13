@@ -17,6 +17,8 @@ object AltTabHook : BaseHook() {
                     // alt-tab
                     if ((arg1.isAltPressed && arg1.keyCode == 61)) {
                         param.result = 0L;
+                    }else if ((arg1.isCtrlPressed && arg1.keyCode == 51)) {
+                        param.result = 0L;
                     }
                 }
             }
